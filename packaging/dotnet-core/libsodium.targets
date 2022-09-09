@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Condition=" '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Windows_NT' ">
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x86\native\libsodium.dll">
+      <Link>runtimes\win-x86\native\libsodium.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x64\native\libsodium.dll">
+      <Link>runtimes\win-x64\native\libsodium.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
+</Project>
